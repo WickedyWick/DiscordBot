@@ -6,7 +6,7 @@ try{
 let list;
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  list = client.guilds.cache.get("849718699204411453"); 
+  list = client.guilds.cache.get(String(process.env.SERVER_ID)); 
   
 });
 var user;
